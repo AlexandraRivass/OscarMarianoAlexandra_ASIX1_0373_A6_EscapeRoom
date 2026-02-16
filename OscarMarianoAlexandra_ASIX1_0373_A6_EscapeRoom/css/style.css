@@ -1,0 +1,135 @@
+
+/* Import del Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+*{
+    box-sizing: border-box; 
+    margin: 0;  /* Margen de los lados 0*/
+    padding: 0; /* padding del interior a 0 */ 
+ 
+}
+
+/* PORTADAA*/
+body{
+    margin:0;
+    background:black;
+    color:#00ff00;
+    font-family:monospace;
+}
+
+/* pantalla inicial */
+#start{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    background:black;
+    cursor:pointer;
+}
+
+/* contenido oculto al inicio */
+#contenido{
+    display:none;
+    padding:40px;
+}
+
+
+.fondo{
+    background-image: url(../img/fondopagina.png);/* Imagen de fondo */
+    background-repeat: no-repeat; /* Solo aparezca 1 imagen */
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh; /* Tamaño de la imagen */
+    /* overflow: hidden;  */
+}
+
+.contenedor{
+    margin-top: 10%; /* Margen del texto  (arriba)*/
+    margin-left: 23%; /* Margen del texto (izquierda) */
+    margin-right: 23%; /* Margen del texto (right) */
+    font-family: "Bitcount Grid Double", system-ui; /* Fuente del texto personalizada */
+    color: #000000; /* Color del texto */   
+}
+
+.texto{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+/* Clase de Formulario*/
+.formulario {
+    font-family: "Bitcount Grid Double", system-ui; /* Fuente del texto personalizada */
+    background-color: #ffffff.20; /* fondo oscuro tipo terminal */
+    color: #000000; /* texto verde hacker */
+    padding: 20px; 
+    border-radius: 10px;  /* Bordes redondeados */                          
+    width: 600px; 
+    box-shadow: 0 0 20px #000000; /* Sombra de la casilla verde clarito*/
+    display: flex;
+    align-items: center;
+    gap: 12px;                /* Reducido de 15px a 12px */
+    padding: 15px;            /* Reducido de 20px a 15px */
+    border-top: 1px solid #00ff00;
+}
+
+/* El hover es lo que cambia cuando pasa el mouse */
+.formulario:hover{
+    box-shadow: 0 0 20px #063d06; /* Sombra de la casilla verde oscurito*/
+
+}
+
+.formulario label {
+    font-size: 1.1rem;        /* Reducido de 1.2rem a 1.1rem */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;    /* Reducido de 2px a 1.5px */
+}
+
+
+/* ESTO ES LO QUE SE INGRESA LOS DATOS LA CASILLA DEL NOMBRE*/
+.formulario input[type="text"] {
+    width: 30%;               
+    max-width: 300px;         
+    padding: 8px 15px;        
+    background-color: #034617;
+    border: 1px solid #00ff00; 
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Bitcount Grid Double", system-ui; /* Fuente del texto personalizada */
+
+    font-size: 0.95rem;       /* Texto ligeramente más pequeño */
+}
+
+.formulario input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    background-color: #0f0f0f;
+}
+
+.formulario input[type="submit"] {
+    padding: 8px 30px;        /* Padding vertical reducido */
+    background-color: transparent;
+    border: 1px solid #00ff00; /* Borde más fino */
+    border-radius: 4px;
+    color: #000000;
+        
+    font-family: "Bitcount Grid Double", system-ui; /* Fuente del texto personalizada */
+    font-size: 1rem;          /* Texto más pequeño */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;    /* Reducido */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
