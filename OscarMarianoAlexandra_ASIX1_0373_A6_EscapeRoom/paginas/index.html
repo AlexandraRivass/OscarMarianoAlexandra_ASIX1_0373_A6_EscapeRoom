@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Home - Pagina</title>
 
     <!-- Logo de la pagina inicial -->
-    <link rel="icon" href="./img/logo.jpg">
+    <link rel="icon" href="../img/logo.jpg">
     
     <!--Enlace de css-->
     <link rel="stylesheet" href="../css/style.css">
@@ -42,13 +42,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script defer src="../js/scape.js"></script>
 
 
-<body class="fondo">
-
+    <body class="fondo">
+    <!--Audio que inicia tan buen punto se abre la pagina. 
+    Etiqueta src apunta al audio que se reproduce y la etiqueta autoplay lo reproduce tan buen punto se abra la pagina-->
+    <audio src="../sonido/sonido.mp3" autoplay></audio>
     <container>
         <div class="contenedor">
-            <div class="texto">
+            <div>
                 <h1>BIENVENIDO AL HACKER ROOM <i class="fas fa-user-secret"></i></h1>
-                <h5></h5>  <!-- Aquí irá el texto -->
+                <span class="texto"></span><!-- Aquí irá el texto -->
             </div>
 
             <!--Formulario-->
